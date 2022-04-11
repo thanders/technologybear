@@ -1,0 +1,79 @@
+---
+date: '2022-08-07'
+thumbnail: '/assets/social/bearshare.jpeg'
+title: 'Publishing a go module to snapcraft.io'
+description: 'Publishing a basic go application to snapcraft.io'
+includeStructuredData: true
+headData: {
+    keywords: 'Go, snapcraft, snap, LXD, ubuntu',
+    pageURL: 'https://www.technologybear.net/posts/snapcraft-go',
+    type: 'website',
+    datetime: '',
+    image: 'https://technologybear.net/assets/social/bearshare.jpeg'
+}
+structuredDataType: 'FAQPage'
+structuredDataTypeTitle: 'What is memoization?'
+structuredDataID: 'question0001'
+category: 'Application distribution'
+---
+
+
+
+  ## Why is this useful for web development?
+
+  Memoization can be useful for web application development because webpages often depend on functions calls to be complete before completing the render of a page. If a function is expensive and gets called many times, often returning the same result, memoization may be able to help.
+
+  ## React Development
+
+
+  ### The React useMemo hook
+
+  ReactJS provides a hook for memoization, <ExternalLink postID='memoization' linkID='useMemo' />. Memoization for react webapps can be very useful, but there are a few important things to remember:
+  - The function passed to useMemo will always run during rendering. Don’t do anything there that you wouldn’t normally do while rendering.
+  - Write your code so that it still works without useMemo — and implement memoization, if needed, to optimize performance.
+  - Profile the related component to ensure that memoization improves performance
+
+
+  ### Example
+
+  The example below shows how to memoize an example function.
+  ```
+  sudo snap install dealership-service_*.snap --devmode --dangerous
+  sudo snap remove woke
+  ```
+
+Use the snapcraft CLI to login to your Snapcraft account
+```
+  snapcraft login
+```
+Upload the snap file to your account. The command below includes the release definition(edge, stable, )
+```
+  snapcraft upload --release=edge dealership-service_*.snap
+```
+
+```
+  snapcraft --debug
+  snapcraft push dealership-service_0.2_amd64.snap
+  systemctl list-units --type=service
+  journalctl -u snap.dealership-service.dealership-service.service
+  systemctl reset-failed
+  ```
+
+  ```
+  multipass list
+  multipass delete --purge snapcraft-instance-name
+  ```
+
+
+### Citations
+
+<div>
+  <ul>
+    <li>
+      Wikipedia, <ExternalLink postID='memoization' linkID='wikipediaURL' />
+    </li>
+    <li>
+      ReactJS - useMemo, <ExternalLink postID='memoization' linkID='useMemoURL' />
+    </li>
+  </ul>
+</div>

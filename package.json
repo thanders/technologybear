@@ -1,0 +1,39 @@
+{
+  "name": "development-project",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && $npm_execpath run postbuild",
+    "start": "next start",
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
+  },
+  "author": "Tom A",
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.6.4",
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.4.0",
+    "gray-matter": "^4.0.3",
+    "next": "12.1.6",
+    "next-mdx-remote": "^4.0.3",
+    "postcss": "^8.4.1",
+    "prismjs": "^1.24.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.5",
+    "tailwindcss": "^2.2.19"
+  },
+  "devDependencies": {
+    "@types/node": "16.11.10",
+    "@types/prismjs": "^1.26.0",
+    "@types/react": "17.0.37",
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.1.6",
+    "next-sitemap": "^2.5.20",
+    "sass": "^1.50.1",
+    "typescript": "4.5.2"
+  }
+}

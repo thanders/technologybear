@@ -1,0 +1,8 @@
+User-agent:*
+Disallow:
+
+# Host
+Host: https://www.technologybear.net/
+
+# Sitemaps
+Sitemap: https://www.technologybear.net/sitemap.xml

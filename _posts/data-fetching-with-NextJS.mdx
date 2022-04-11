@@ -1,0 +1,45 @@
+---
+date: '2022-04-09'
+thumbnail: '/assets/social/bearshare.jpeg'
+title: 'Data fetching with NextJS'
+description: 'An overview about data-fetching and page generation with NextJS'
+includeStructuredData: false
+headData: {
+    keywords: 'NextJS, data-fetching, pre-rendered, server-side, page rendering',
+    pageURL: 'https://www.technologybear.net/posts/data-fetching-with-NextJS',
+    type: 'website',
+    datetime: '',
+    image: 'https://technologybear.net/assets/social/bearshare.jpeg'
+}
+structuredDataType: ''
+structuredDataID: ''
+category: 'NextJS'
+---
+
+
+In NextJS a page is a React component that has been exported from the pages directory. The page content can either be pre-rendered pages or fetched at runtime. This post will attempt to explain the different ways to fetch data with NextJS.
+
+NextJS uses a <ExternalLink postID='fetchNextjs' linkID='nextjsRouting' />, where a file within the pages directory is a route. NextJS provides support for functions that can be exported from within a page to fetch data.
+
+
+<h3>Pre-rendered</h3>
+
+- <b>getStaticProps</b>
+
+    Pre-render the page at build time. This is for static site generation.
+
+- <b>getServerSideProps</b>
+
+    The page will be pre-rendered server-side using data returned by this function. This occurs upon page request, at runtime.
+
+    You should use getServerSideProps only if you need to pre-render a page whose data must be fetched at request time.
+
+- <b>getStaticPaths</b> - If a page has Dynamic Routes and uses getStaticProps, getStaticPaths can be used to pre-render specific pages.    
+
+
+
+<h3>Runtime</h3>
+
+- <b>incrementalStaticRegeneration</b> - Incremental Static Regeneration (ISR) enables you to use static-generation on a per-page basis, without needing to rebuild the entire site.
+
+- <b>clientSide</b> - If done at the page level, the data is fetched at runtime, and the content of the page is updated as the data changes. When used at the component level, the data is fetched at the time of the component mount, and the content of the component is updated as the data changes.

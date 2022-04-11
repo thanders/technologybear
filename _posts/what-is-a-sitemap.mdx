@@ -1,0 +1,66 @@
+---
+date: '2022-04-24'
+thumbnail: '/assets/social/bearshare.jpeg'
+title: 'What is a sitemap and why is it useful for SEO?'
+description: 'All you need to know about sitemaps and why they are useful for high quality SEO.'
+includeStructuredData: true
+headData: {
+    keywords: 'Google Search Console, Sitemap, NextJS, SEO, Search engine optimization',
+    pageURL: 'https://www.technologybear.net/posts/creating-a-sitemap',
+    type: 'website',
+    datetime: '',
+    image: 'https://technologybear.net/assets/social/bearshare.jpeg'
+}
+structuredDataType: 'step'
+structuredDataTypeTitle: 'How to generate NextJS sitemap and add it to the Gooogle Search Console?'
+structuredDataID: '00001'
+category: 'Search Engine Optimization'
+---
+
+
+
+  
+  A sitemap is a document that describes the pages within a website. It is used help search engines understand which pages are available to be indexed.
+
+  ## The sitemaps protocol
+
+  <ExternalLink postID='sitemap' linkID='sitemaps' /> was created to have a recognized standard for the definition of a sitemap. The protocol considers a sitemap to be an XML file that lists URLs for a site along with additional metadata about each URL so that search engines can more intelligently crawl the site. <ExternalLink postID='sitemap' linkID='sitemapsXML' /> examples are a good place to learn more.
+
+  ## Sitemaps and search engine crawlers
+
+  Search engines need to know if your website has a sitemap. There are two main methods for providing the site map to a search engine.
+  
+  ### Automatically with robots.txt
+  
+  Search engine crawlers attempt to index your website. They will check the robots.txt file to see if your website contains a sitemap. 
+
+  ### Manually using a search engine's submission page
+
+  Each search engine will have a submission page where the website owner or site's webmaster will be able to submit a link to their website's sitemap.xml file.
+
+  For example, Google has the <ExternalLink postID='sitemap' linkID='searchConsole' />. The Google Search Console's Index section will allow you to add and view submitted sitemaps for your website. Being able to add the sitemap using this tool is a useful way to quicly ensure that the search engine has access to the sitemap. The Index section also provides the details about which pages were found in the sitemap and if they have been indexed.
+
+  ## Sitemaps with NextJS
+
+A NextJS project doesn't automatically come with a sitemap. One must be created for your project. This can be done manually, but there is an npmjs package that can help, <ExternalLink postID='sitemap' linkID='nextSitemap' />. Next-sitemap can help generate robots.txt and sitemap files. The generator can be configured to meet the needs of your project.
+
+### How to generate NextJS sitemap and add it to the Gooogle Search Console?
+
+1. Install Next-Sitemap
+
+2. Create a file called next-sitemap.js and setup your configuration
+
+3. Create a script within package.json to create the sitemap e.g. postbuild
+
+4. Run your projects build script so that Next-sitemap will be able to run
+
+5. Run the postbuild script - depending upon your Next-sitemap configuration, the sitemap files and the robots.txt file will appear within the /public folder.
+
+6. Test it out locally by either viewing manually viewing that the files were generated or by starting your project's local dev server and accessing the file with a browser - For example, <ExternalLink postID='sitemap' linkID='localSitemap' />.
+
+7. Deploy your changes to the webserver, test that your sitemap is accessible.
+
+8. Go to the <ExternalLink postID='sitemap' linkID='searchConsole' />. Go to the Index section and Click on sitemaps and add a link to your sitemap.
+
+
+You should see a confirmation that the sitemap has been succesfully added.

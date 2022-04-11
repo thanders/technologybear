@@ -1,0 +1,17 @@
+@import "../../theme/theme";
+.linkText {
+    color: $primary-dark !important;
+}
+.secondaryList {
+    list-style-type: none;
+}
+.testLi {
+    content: none;
+}
+.count {
+    margin-right: 20px;
+}
+.secondaryText{
+    display: flex;
+    flex-direction: row;
+}

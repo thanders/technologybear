@@ -1,0 +1,95 @@
+---
+date: '2022-06-04'
+thumbnail: '/assets/social/bearshare.jpeg'
+title: 'Redux Explained'
+description: 'Basic answers to your questions about the fundamentals of Redux'
+includeStructuredData: false
+headData: {
+    keywords: 'Redux',
+    pageURL: 'https://www.technologybear.net/posts/redux-explained',
+    type: 'website',
+    datetime: '',
+    image: 'https://technologybear.net/assets/social/bearshare.jpeg'
+}
+structuredDataType: 'FAQPage'
+structuredDataTypeTitle: 'What is Redux?'
+structuredDataID: '00003'
+category: 'Redux'
+---
+
+  ## What is Redux?
+
+  Redux is a predictable state container for JavaScript apps.
+
+  Redux allows global state of your webapp to be stored in an object tree within a single store.
+
+  Redux follows a flux like design pattern.
+
+  ## Can Redux be used with React and NextJS?
+
+  Yes, Redux can be used as a data store for any UI layer. The most common usage is with React and React Native, but there are bindings available for Angular, Angular 2, Vue, Mithril, and more.
+
+  ## Data Flow
+
+  Redux follows a unidirectional data flow.
+
+  <ImageNext src='/assets/reduxDataFlow.gif' height='600px' width='1000px' alt='Redux flow'  />
+
+  
+  ### Related terminology
+
+  Store - is a read-only object which holds the state of the application
+
+  Actions - are objects that describe events, example `{type: 'deposit', payload: 10}`
+
+  Reducers - are functions that implement action behavior to the current state and return the new state
+
+  Dispatch - is the store's method for passing actions into reducers to update the store's state
+
+  ## What is Redux Toolkit?
+
+  The official, opinionated, batteries-included toolset for efficient Redux development.
+
+  <b>Redux Toolkit</b> was originally created to help address three common concerns about Redux:
+
+  - "Configuring a Redux store is too complicated"
+  - "I have to add a lot of packages to get Redux to do anything useful"
+  - "Redux requires too much boilerplate code"
+
+  <b>Redux Toolkit</b> is written in TypeScript, and its API is designed to enable great integration with TypeScript applications.
+
+  ## What are some of the benefits of using Redux?
+
+  - A centralized global state management system
+  - Simple debugging And testing
+  - Redux Dev Tools - great for debugging state changes
+  - Predictable Results
+    - The store is a read only single source of truth
+    - Reducers are pure functions (a given input will always equal the same output)
+
+  ## When should I use Redux for my React App?
+
+  Redux is a good solution for features that will benefit from global state.
+  
+  Global state is useful for features that need to switch between components and routes. For example:
+  - Form inputs (account creation, shopping cart, checkout)
+  - Form validation
+  - Account information for a logged in user
+
+  However, not every feature will require global state. Certain features can use stateless components or components with local state.
+
+  ## How can I write unit tests for Redux Tookit?
+
+  Unit and integration tests can be done using standard frameworks, such as jest and the react-testing-library.
+
+  <ExternalLink postID='reduxLinks' linkID='exampleTests' /> is a link to some relevant examples.
+
+## Citations
+
+<div>
+  <ul>
+    <li>
+      ReduxJS, <ExternalLink postID='reduxLinks' linkID='reduxDefinition' />
+    </li>
+  </ul>
+</div>

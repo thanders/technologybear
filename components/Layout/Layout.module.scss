@@ -1,0 +1,11 @@
+@import "../../theme/theme";
+
+.layoutRoot {
+    font-family: $core-font;
+    color: $text;
+    background-color: $background-dark;
+}
+
+.root {
+    min-height: 75vh;
+}

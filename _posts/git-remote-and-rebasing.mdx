@@ -1,0 +1,80 @@
+---
+date: '2022-04-10'
+thumbnail: '/assets/social/bearshare.jpeg'
+title: 'Git remote and rebasing'
+description: 'An overview about using git to create remotes and rebasing'
+includeStructuredData: false
+headData: {
+    keywords: 'Git, remote, rebasing, sync, fork',
+    pageURL: 'https://www.technologybear.net/posts/git-remote-and-rebasing',
+    type: 'website',
+    datetime: '',
+    image: 'https://technologybear.net/assets/social/bearshare.jpeg'
+}
+category: 'Source code management'
+---
+
+  ## Adding a git remote and rebasing your local branch
+
+  You may often want to work from a fork of another repository and then merge a branch on your fork into that repository. Understanding how synchronize your fork's branch locally with that repository is very helpful.
+
+  This will show you how to create a local git remote and rebase your local branch with a remote branch.
+
+  Rebasing a branch in git means to reapply commits from another branch on top of your local branch. Rebasing is a useful way to update your fork's branch locally if the repostory that it is based on has changed.
+
+  <div style={{ marginTop: '60px' }} />
+
+  ## Adding a git remote
+
+  Git can be used to add a remote branch. Assuming you already have git initialized, you can get started:
+
+  ```bash
+  git remote add [remoteName] https://github.com/[username]/[repository].git
+  ```
+
+  For example:
+  ```bash
+  git remote add upstream https://github.com/myusername/sample.git
+  ```
+
+  <div style={{ marginTop: '60px' }} />
+
+  ## Rebasing local branch with remote
+
+  Fetch updates from the remote branch and rebase the your local branch with the remote
+
+  ```bash
+  git fetch [remoteName]
+  git rebase [remoteName]/[branchName]
+  ```
+
+  For example,
+  ```bash
+  git fetch upstream
+  git rebase upstream/main
+  ```
+
+  <div style={{ marginTop: '40px' }} />
+
+  If there is a merge conflict, you will probably want to resolve it.
+
+  Below are some commands that can be used during a merge conflict.
+
+  <div style={{ marginTop: '40px' }} />
+
+  * Continue - When the conflict has been resolved, this will finish the rebase.
+    ```bash
+    git rebase --continue
+    ```
+
+  * Abort - stops the rebase and checks out the original branch
+    ```bash
+    git rebase --abort
+    ```
+
+  * Skip - skips the rebase of the commit that has caused the merge conflict. None of the changes in that commit will be applied.
+    ```bash
+    git rebase --skip
+    ```
+
+    Once you have completed the rebase, your checked out branch is now be in sync with remoteName.

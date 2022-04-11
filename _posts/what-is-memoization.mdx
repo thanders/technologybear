@@ -1,0 +1,68 @@
+---
+date: '2022-04-24'
+thumbnail: '/assets/social/bearshare.jpeg'
+title: 'What is memoization?'
+description: 'Memoization is an optimization technique that caches results of expensive function calls'
+includeStructuredData: true
+headData: {
+    keywords: 'Memoization, React, useMemo',
+    pageURL: 'https://www.technologybear.net/posts/what-is-memoization',
+    type: 'website',
+    datetime: '',
+    image: 'https://technologybear.net/assets/social/bearshare.jpeg'
+}
+structuredDataType: 'FAQPage'
+structuredDataTypeTitle: 'What is memoization?'
+structuredDataID: 'question0001'
+category: 'Programming'
+---
+
+
+
+  
+  In programming, memoization "is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again". 
+
+  ## Why is this useful for web development?
+
+  Memoization can be useful for web application development because webpages often depend on functions calls to be complete before completing the render of a page. If a function is expensive and gets called many times, often returning the same result, memoization may be able to help.
+
+  ## React Development
+
+
+  ### The React useMemo hook
+
+  ReactJS provides a hook for memoization, <ExternalLink postID='memoization' linkID='useMemo' />. Memoization for react webapps can be very useful, but there are a few important things to remember:
+  - The function passed to useMemo will always run during rendering. Don’t do anything there that you wouldn’t normally do while rendering.
+  - Write your code so that it still works without useMemo — and implement memoization, if needed, to optimize performance.
+  - Profile the related component to ensure that memoization improves performance
+
+
+  ### Example
+
+  The example below shows how to memoize an example function.
+  ```
+  import { useMemo } from "react";
+
+  const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
+  ```
+
+  ### When should I not use the useMemo hook?
+
+  There are many scenarios where it may be better to not memoize a function or to use an alternative optimization technique.
+  For example, do not memoize:
+
+  - When memoization does not result in a performance optimization - this can be checked by profiling
+  - When the function you want to memoize is a callback. React has a specific hook designed for this scenario, <ExternalLink postID='memoization' linkID='useCallback' />.
+
+### Citations
+
+<div>
+  <ul>
+    <li>
+      Wikipedia, <ExternalLink postID='memoization' linkID='wikipediaURL' />
+    </li>
+    <li>
+      ReactJS - useMemo, <ExternalLink postID='memoization' linkID='useMemoURL' />
+    </li>
+  </ul>
+</div>
