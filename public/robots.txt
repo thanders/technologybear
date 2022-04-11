@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Allow: /posts/
+Allow: /posts
+
+# Host
+Host: https://www.technologybear.net/
+
+# Sitemaps
+Sitemap: https://www.technologybear.net/sitemap.xml

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://www.technologybear.net</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-27T01:43:48.853Z</lastmod></url>
+<url><loc>https://www.technologybear.net/posts</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-27T01:43:48.853Z</lastmod></url>
+<url><loc>https://www.technologybear.net/posts/what-is-memoization</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-27T01:43:48.853Z</lastmod></url>
+<url><loc>https://www.technologybear.net/posts/what-is-a-sitemap</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-27T01:43:48.853Z</lastmod></url>
+<url><loc>https://www.technologybear.net/posts/what-are-react-hooks</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-27T01:43:48.853Z</lastmod></url>
+<url><loc>https://www.technologybear.net/posts/redux-explained</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-27T01:43:48.853Z</lastmod></url>
+<url><loc>https://www.technologybear.net/posts/git-remote-and-rebasing</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-27T01:43:48.853Z</lastmod></url>
+<url><loc>https://www.technologybear.net/posts/data-fetching-with-NextJS</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-27T01:43:48.853Z</lastmod></url>
+<url><loc>https://www.technologybear.net/posts/aws-foundation-syllabus</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-27T01:43:48.853Z</lastmod></url>
+<url><loc>https://www.technologybear.net/posts/aws-cloud-value-proposition</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-27T01:43:48.853Z</lastmod></url>
+<url><loc>https://www.technologybear.net/posts/aws-cloud-economics</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-27T01:43:48.853Z</lastmod></url>
+<url><loc>https://www.technologybear.net/posts/aws-architecture-design-principles</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-27T01:43:48.853Z</lastmod></url>
+</urlset>

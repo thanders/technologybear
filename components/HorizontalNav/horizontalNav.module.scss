@@ -1,0 +1,19 @@
+@import "../../theme/theme";
+  .container {
+    background-color: $primary-dark;
+  }
+
+  .navMenu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    padding: 0px 0px 0px 20px;
+  }
+  .navLI{
+    float: left;
+  }
+  .navMenu a {
+    color: null;
+  }

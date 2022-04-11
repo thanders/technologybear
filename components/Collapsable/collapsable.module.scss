@@ -1,0 +1,27 @@
+@import "../../theme/theme";
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px 0px 20px 0px;
+}
+.primary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 15em;
+    cursor: pointer;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 15px 10px 15px;
+    border: groove;
+    &:focus,
+    &:hover {
+        opacity: 0.6;
+    }
+}
+.children {
+    width: 100%;
+}
